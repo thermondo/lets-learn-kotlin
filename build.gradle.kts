@@ -1,4 +1,5 @@
 import io.gitlab.arturbosch.detekt.Detekt
+import kotlinx.kover.api.KoverProjectConfig
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -8,10 +9,31 @@ plugins {
 
     id("io.gitlab.arturbosch.detekt") version "1.21.0"
     id("org.jmailen.kotlinter") version "3.11.1"
+    id("org.jetbrains.kotlinx.kover") version "0.6.1"
 }
 
-group = "de.thermondo"
-version = "1.0-SNAPSHOT"
+allprojects {
+    apply(plugin = "kover")
+
+    group = "de.thermondo"
+    version = "0.1.0"
+
+    extensions.configure<KoverProjectConfig> {
+        isDisabled.set(false)
+        engine.set(kotlinx.kover.api.IntellijEngine("1.0.683"))
+    }
+
+    koverMerged {
+        xmlReport {
+            onCheck.set(false)
+            reportFile.set(layout.buildDirectory.file("$buildDir/reports/kover/result.xml"))
+        }
+        htmlReport {
+            onCheck.set(false)
+            reportDir.set(layout.buildDirectory.dir("$buildDir/reports/kover/html-result"))
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -41,4 +63,8 @@ tasks.withType<Detekt>().configureEach {
         txt.required.set(false)
         sarif.required.set(false)
     }
+}
+
+koverMerged {
+    enable()
 }
