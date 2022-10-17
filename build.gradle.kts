@@ -7,6 +7,7 @@ plugins {
     kotlin("jvm") version "1.7.20"
 
     id("io.gitlab.arturbosch.detekt") version "1.21.0"
+    id("org.jmailen.kotlinter") version "3.11.1"
 }
 
 group = "de.thermondo"
