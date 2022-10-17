@@ -8,7 +8,7 @@ plugins {
     kotlin("jvm") version "1.7.20"
 
     id("io.gitlab.arturbosch.detekt") version "1.21.0"
-    id("org.jmailen.kotlinter") version "3.11.1"
+    id("org.jmailen.kotlinter") version "3.12.0"
     id("org.jetbrains.kotlinx.kover") version "0.6.1"
 }
 
