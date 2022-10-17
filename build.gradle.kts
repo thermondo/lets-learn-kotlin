@@ -51,10 +51,6 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
 }
 
-application {
-    mainClass.set("MainKt")
-}
-
 tasks.withType<Detekt>().configureEach {
     jvmTarget = "11"
     reports {
