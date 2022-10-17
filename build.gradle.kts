@@ -1,8 +1,12 @@
+import io.gitlab.arturbosch.detekt.Detekt
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.20"
     application
+
+    kotlin("jvm") version "1.7.20"
+
+    id("io.gitlab.arturbosch.detekt") version "1.21.0"
 }
 
 group = "de.thermondo"
@@ -21,9 +25,19 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "17"
 }
 
 application {
     mainClass.set("MainKt")
+}
+
+tasks.withType<Detekt>().configureEach {
+    jvmTarget = "11"
+    reports {
+        html.required.set(true)
+        xml.required.set(false)
+        txt.required.set(false)
+        sarif.required.set(false)
+    }
 }

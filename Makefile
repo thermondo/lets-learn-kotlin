@@ -1,4 +1,4 @@
-.PHONY: all build clean test
+.PHONY: all build clean lint test
 
 all: clean build
 
@@ -7,6 +7,9 @@ build:
 
 clean:
 	./gradlew clean
+
+lint:
+	./gradlew detekt
 
 test:
 	./gradlew test
