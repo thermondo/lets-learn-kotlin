@@ -11,6 +11,7 @@ package de.thermondo.solutions.basics
  * name: immutableValue
  * value : 15
  */
+@Suppress("MagicNumber", "MayBeConst")
 val immutableValue = 15
 
 /**
@@ -18,6 +19,5 @@ val immutableValue = 15
  * name: mutableValue
  * value : 16
  */
+@Suppress("MagicNumber")
 var mutableValue = 16
-
-object Basics1
