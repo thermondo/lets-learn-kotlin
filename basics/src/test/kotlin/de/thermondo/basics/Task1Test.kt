@@ -1,4 +1,4 @@
-package de.thermondo.learn.kotlin
+package de.thermondo.basics
 
 import kotlin.reflect.KMutableProperty
 import kotlin.test.Test

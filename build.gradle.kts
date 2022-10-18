@@ -13,6 +13,7 @@ plugins {
 }
 
 allprojects {
+    apply(plugin = "kotlin")
     apply(plugin = "kover")
 
     group = "de.thermondo"
@@ -33,22 +34,18 @@ allprojects {
             reportDir.set(layout.buildDirectory.dir("$buildDir/reports/kover/html-result"))
         }
     }
+
+    tasks.withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "17"
+    }
+
+    tasks.test {
+        useJUnitPlatform()
+    }
 }
 
 repositories {
     mavenCentral()
-}
-
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnit()
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "17"
 }
 
 tasks.withType<Detekt>().configureEach {

@@ -1,4 +1,4 @@
-package de.thermondo.learn.kotlin
+package de.thermondo.basics
 
 /**
  * There are two ways of declaring variables in kotlin:

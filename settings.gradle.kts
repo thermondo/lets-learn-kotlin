@@ -1,3 +1,2 @@
-
-rootProject.name = "lets-learn-kotlin"
-
+rootProject.name = "Let's Learn Kotlin"
+include("basics")
