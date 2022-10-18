@@ -23,6 +23,12 @@ allprojects {
     }
 
     koverMerged {
+        filters {
+            projects {
+                // TODO: Remove exclusion rules in order to track your progress
+                excludes += listOf("basics")
+            }
+        }
         xmlReport {
             onCheck.set(false)
             reportFile.set(layout.buildDirectory.file("$buildDir/reports/kover/result.xml"))
