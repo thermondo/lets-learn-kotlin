@@ -1,0 +1,45 @@
+codecov:
+  branch: main
+  notify:
+    require_ci_to_pass: no
+
+coverage:
+  precision: 1
+  round: down
+  range: "70...100"
+  status:
+    project:
+      default:
+        target: 100
+        threshold: 1%
+        only_pulls: true
+
+    patch:
+      default:
+        target: 100
+        threshold: 1%
+        only_pulls: true
+
+    changes: no
+
+parsers:
+  gcov:
+    branch_detection:
+      conditional: yes
+      loop: yes
+      method: no
+      macro: no
+
+github_checks:
+  annotations: true
+
+ignore:
+  - "**/build/**/*"
+  - "**/*.gradle"
+  - "basics/**/*"
+  - "test-utils/**/*"
+
+comment:
+  layout: "header, diff"
+  behavior: default
+  require_changes: no

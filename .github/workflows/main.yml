@@ -19,9 +19,9 @@ jobs:
           access_token: ${{ github.token }}
 
   test:
+    name: "Test & Report"
     runs-on: ubuntu-latest
     needs: cancel-previous
-    name: Test
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -36,4 +36,8 @@ jobs:
       - name: Lint
         run: make lint
       - name: Test
-        run: make test
+        run: make test report
+      - name: Report
+        uses: codecov/codecov-action@v3.1.1
+        with:
+          files: ./build/reports/kover/result.xml
