@@ -25,8 +25,10 @@ allprojects {
     koverMerged {
         filters {
             projects {
-                // TODO: Remove exclusion rules in order to track your progress
-                excludes += listOf("basics")
+                excludes += listOf(
+                    "test-utils",
+                    "basics", // TODO: Remove exclusion rules in order to track your progress
+                )
             }
         }
         xmlReport {

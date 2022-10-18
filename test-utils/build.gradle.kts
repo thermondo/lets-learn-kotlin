@@ -9,6 +9,5 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
-    testImplementation(project(":test-utils"))
+    implementation("org.junit.jupiter:junit-jupiter:5.9.1")
 }

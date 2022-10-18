@@ -8,4 +8,5 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation(project(":test-utils"))
 }
