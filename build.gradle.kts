@@ -3,8 +3,6 @@ import kotlinx.kover.api.KoverProjectConfig
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    application
-
     kotlin("jvm") version "1.7.20"
 
     id("io.gitlab.arturbosch.detekt") version "1.21.0"
@@ -13,6 +11,7 @@ plugins {
 }
 
 allprojects {
+    apply(plugin = "kotlin")
     apply(plugin = "kover")
 
     group = "de.thermondo"
@@ -24,6 +23,14 @@ allprojects {
     }
 
     koverMerged {
+        filters {
+            projects {
+                excludes += listOf(
+                    "test-utils",
+                    "basics", // TODO: Remove exclusion rules in order to track your progress
+                )
+            }
+        }
         xmlReport {
             onCheck.set(false)
             reportFile.set(layout.buildDirectory.file("$buildDir/reports/kover/result.xml"))
@@ -33,30 +40,22 @@ allprojects {
             reportDir.set(layout.buildDirectory.dir("$buildDir/reports/kover/html-result"))
         }
     }
+
+    tasks.withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "17"
+    }
+
+    tasks.test {
+        useJUnitPlatform()
+    }
 }
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "17"
-}
-
-application {
-    mainClass.set("MainKt")
-}
-
 tasks.withType<Detekt>().configureEach {
-    jvmTarget = "11"
+    jvmTarget = "17"
     reports {
         html.required.set(true)
         xml.required.set(false)
