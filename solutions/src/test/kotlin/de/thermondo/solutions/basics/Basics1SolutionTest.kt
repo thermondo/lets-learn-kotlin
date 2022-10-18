@@ -7,7 +7,6 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 class Basics1SolutionTest {
-
     @Test
     fun `validate immutable value instantiation`() {
         val expected = 15
