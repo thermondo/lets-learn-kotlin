@@ -53,7 +53,7 @@ repositories {
 }
 
 tasks.withType<Detekt>().configureEach {
-    jvmTarget = "11"
+    jvmTarget = "17"
     reports {
         html.required.set(true)
         xml.required.set(false)
