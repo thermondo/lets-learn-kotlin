@@ -9,6 +9,6 @@ package de.thermondo.basics
  *
  * Let's define a function with the following constraints:
  * function name : hello parameter
- * parameter name : value
- * parameter type: String
+ *
+ * @param value : String
  */

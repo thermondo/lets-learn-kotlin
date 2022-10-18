@@ -9,8 +9,8 @@ package de.thermondo.solutions.basics
  *
  * Let's define a function with the following constraints:
  * function name : hello parameter
- * parameter name : value
- * parameter type: String
+ *
+ * @param value : String
  */
 fun helloParameter(value: String) {
     println("Hello $value!")
