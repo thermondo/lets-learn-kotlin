@@ -12,3 +12,11 @@ package de.thermondo.basics
  *
  * @param value : String
  */
+
+fun main(){
+    helloParam(value = "Kotlin")
+}
+fun helloParam(value: String) {
+    println("Hello $value!")
+}
+

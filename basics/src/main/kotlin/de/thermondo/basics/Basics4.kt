@@ -13,3 +13,9 @@ package de.thermondo.basics
  * @param valueTwo: Int
  * @return Int
  */
+
+fun main(){
+   println(add(5,10))
+}
+fun add(v1:Int, v2:Int): Int =
+    v1+v2
