@@ -8,7 +8,8 @@ package de.thermondo.basics
 
 fun main() {
     val year = Year.May
-    when(year){
+    when(year){ /**Here, "year" is an argument. The "when" expression matches its arguments against all branches
+                in order until some branch condition is satisfied.*/
         Year.January -> println("1")
         Year.February -> println("2")
         Year.March -> println("3")

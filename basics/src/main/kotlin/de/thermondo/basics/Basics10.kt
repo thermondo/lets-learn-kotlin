@@ -2,5 +2,5 @@ package de.thermondo.basics
 
 /**
  *
- * 
+ *
  */
