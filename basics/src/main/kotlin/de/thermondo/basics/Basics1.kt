@@ -15,20 +15,22 @@ fun main(){
     immutableValue()
     mutableValue()
 }
-fun immutableValue(){
-    val name = "immutableValue"
+fun immutableValue(): Int {
+    //val name = "immutableValue"
     val immutableValue = 15
-    println(name)
-    println(immutableValue)
+    return immutableValue
+   // println(name)
+   // println(immutableValue)
 }
 /**
  * Let's define a mutable variable with the following constraints:
  * name: mutableValue
  * value : 16
  */
-fun mutableValue(){
-    var name = "mutableValue"
+fun mutableValue(): Int {
+   // var name = "mutableValue"
     var mutableValue = 16
-    println(name)
-    println(mutableValue)
+    return mutableValue
+    //println(name)
+    //println(mutableValue)
 }

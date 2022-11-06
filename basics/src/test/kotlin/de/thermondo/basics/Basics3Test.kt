@@ -7,7 +7,7 @@ class Basics3Test : BasePrintlnTest() {
     @Test
     fun `Validate helloParameter function`() {
         val kotlin = "Kotlin"
-        helloParameter(value = kotlin)
+        helloParam(value = kotlin)
         assertPrintln("Hello $kotlin!")
     }
 }
