@@ -2,16 +2,19 @@ package de.thermondo.basics
 
 /**
  *
- *
+ * Let us print the table of 2 using while loop.
  */
 
 fun main() {
+    var num = 2
+    var index = 1
+    while (index <= 10)
+    {
+        println(num*index)
+        index++
 
-}
-fun doubleTheValue(obj: Any): Any =
-    when (obj) {
-        is String -> obj.repeat(2)
-        is Long -> obj * 2
-        is List<*> -> obj + obj
-        else -> "Unsupported Type Found."
     }
+
+    print("Current Index : "+index)
+}
+
