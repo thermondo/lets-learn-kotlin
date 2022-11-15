@@ -1,12 +1,11 @@
 package de.thermondo.solutions.basics
 
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class Basics6SolutionTest{
+class Basics06SolutionTest{
 
-    private val user1 = Basics6Solution(name = "Tom", age = 32)
-    private val user2 = Basics6Solution(name = "Venelope", age = 21)
+    private val user1 = Basics06Solution(name = "Tom", age = 32)
+    private val user2 = Basics06Solution(name = "Venelope", age = 21)
 
     @Test
     fun `Validate first user's name`() {

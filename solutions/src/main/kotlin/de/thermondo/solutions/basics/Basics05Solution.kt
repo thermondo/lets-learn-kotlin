@@ -9,7 +9,7 @@ package de.thermondo.solutions.basics
  */
 
 @Suppress("MagicNumber")
-class Basics5Solution {
+class Basics05Solution {
     val name: String = "Kotlin"
     val age: Int = 26
 }

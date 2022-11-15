@@ -1,6 +1,5 @@
 package de.thermondo.solutions.basics
 
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 
@@ -17,7 +16,7 @@ import org.junit.jupiter.api.Test
  */
 
 
-class Basics7SolutionTest{
+class Basics07SolutionTest{
     private val dayOfWeek: String = Basics7Solution()
 
     @Test
