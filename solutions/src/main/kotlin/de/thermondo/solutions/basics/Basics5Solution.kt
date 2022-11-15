@@ -1,7 +1,7 @@
 package de.thermondo.solutions.basics
 
 /**
- * Create a class named Basics5
+ * Create a class named Basics5Solution
  *
  * Define member variables:
  * name: String
