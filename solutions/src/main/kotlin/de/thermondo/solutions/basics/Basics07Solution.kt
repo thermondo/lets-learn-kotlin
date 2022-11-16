@@ -9,7 +9,7 @@ package de.thermondo.solutions.basics
  */
 
 enum class Basics7Solution {
-    Sunday,
+    SUNDAY,
     Monday,
     Tuesday,
     Wednesday,

@@ -1,6 +1,7 @@
 package de.thermondo.solutions.basics
 
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 
 class Basics06SolutionTest{
 
@@ -9,20 +10,20 @@ class Basics06SolutionTest{
 
     @Test
     fun `Validate first user's name`() {
-        kotlin.test.assertEquals(expected = "Tom", actual = user1.name)
+        assertEquals(expected = "Tom", actual = user1.name)
     }
 
     @Test
     fun `Validate first user's age`() {
-        kotlin.test.assertEquals(expected = 32, actual = user1.age)
+        assertEquals(expected = 32, actual = user1.age)
     }
     @Test
     fun `Validate second user's name`() {
-        kotlin.test.assertEquals(expected = "Venelope", actual = user2.name)
+        assertEquals(expected = "Venelope", actual = user2.name)
     }
 
     @Test
     fun `Validate second user's age`() {
-        kotlin.test.assertEquals(expected = 21, actual = user2.age)
+        assertEquals(expected = 21, actual = user2.age)
     }
 }
