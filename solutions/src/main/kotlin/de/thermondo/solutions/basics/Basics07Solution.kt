@@ -10,12 +10,12 @@ package de.thermondo.solutions.basics
 
 enum class Basics7Solution {
     SUNDAY,
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Saturday
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY
 }
 
 fun main() {

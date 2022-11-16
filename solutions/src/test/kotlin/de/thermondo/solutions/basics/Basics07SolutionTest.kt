@@ -14,8 +14,8 @@ class Basics07SolutionTest {
         assertNotNull(Basics7Solution.MONDAY)
         assertNotNull(Basics7Solution.TUESDAY)
         assertNotNull(Basics7Solution.WEDNESDAY)
-        assertNotNull(Basics7Solution.SUNDAY)
-        assertNotNull(Basics7Solution.SUNDAY)
-        assertNotNull(Basics7Solution.SUNDAY)
+        assertNotNull(Basics7Solution.THURSDAY)
+        assertNotNull(Basics7Solution.FRIDAY)
+        assertNotNull(Basics7Solution.SATURDAY)
     }
 }
