@@ -1,12 +1,9 @@
 package de.thermondo.solutions.basics
 
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertAll
-import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
 class Basics07SolutionTest {
-    private val days = Basics7Solution.values()
 
     @Test
     fun `Validate the day of the week`() {
