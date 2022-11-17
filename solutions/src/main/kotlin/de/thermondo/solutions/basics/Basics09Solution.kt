@@ -17,7 +17,11 @@ enum class Basics09Solutions() {
     SEPTEMBER,
     OCTOBER,
     NOVEMBER,
-    DECEMBER
+    DECEMBER;
+
+    /*fun toInt(): Int {
+        val year : Basics09Solutions = Basics09Solutions.MAY
+    }*/
 }
 
 fun main() {
