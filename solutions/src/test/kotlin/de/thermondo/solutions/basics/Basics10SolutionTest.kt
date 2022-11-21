@@ -1,17 +1,16 @@
 package de.thermondo.solutions.basics
 
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import kotlin.reflect.KMutableProperty
+import de.thermondo.test.utils.BasePrintlnTest
 
-class Basics10Solution {
+class Basics10Solution: BasePrintlnTest() {
 
     @Test
     fun `Validate if the index is within the range or not`() {
-        val i =Basics10Solution()
-        when (i in 2..20 && i % 2 == 0) {
-            assertEquals(4, loopWhile())
-        }
+        tableOf2()
+        assertPrintln("2\n4\n6\n8\n10\n12\n14\n16\n18\n20")
     }
 }
 

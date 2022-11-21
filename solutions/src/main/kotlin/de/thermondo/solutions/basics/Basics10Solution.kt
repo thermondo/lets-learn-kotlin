@@ -3,14 +3,8 @@ import com.sun.tools.javac.Main
 /**
  * Print the table of 2 using while loop.
  */
-fun main() {
-    loopWhile()
-}
-/*fun main() {
-    println(whileLoop(index = 1))
-}*/
 
-fun loopWhile() {
+fun tableOf2() {
     var num = 2
     var index = 1
     while (index <= 10)
@@ -20,6 +14,7 @@ fun loopWhile() {
     }
     //print("Current Index : "+index)
 }
+
 
 /*fun whileLoop(index:Int) :Int{
     var num = 2
