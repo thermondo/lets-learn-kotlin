@@ -1,14 +1,13 @@
 package de.thermondo.solutions.basics
 
 import org.junit.jupiter.api.Test
+import de.thermondo.test.utils.BasePrintlnTest
 import kotlin.test.assertEquals
 
-class Basics09SolutionTest {
 
-    private val month = Basics09Solutions.values()
-
+class Basics09SolutionTest: BasePrintlnTest() {
     @Test
     fun `Validate the corresponding month number`(){
-        assertEquals(5, Basics09Solutions.MAY)
+        assertEquals(12, enumMonths())
     }
 }

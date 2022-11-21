@@ -24,23 +24,27 @@ enum class Basics09Solutions() {
     }*/
 }
 
-fun main() {
-    val year = Basics09Solutions.MAY
+fun enumMonths(): Int {
+
+    var year = Basics09Solutions.DECEMBER
     when(year){ /**Here, "year" is an argument. The "when" expression matches its arguments against all branches
     in order until some branch condition is satisfied.*/
-        Basics09Solutions.JANUARY -> println("1")
-        Basics09Solutions.FEBRUARY -> println("2")
-        Basics09Solutions.MARCH -> println("3")
-        Basics09Solutions.APRIL -> println("4")
-        Basics09Solutions.MAY-> println(5)
-        Basics09Solutions.JUNE -> println("6")
-        Basics09Solutions.JULY -> println("7")
-        Basics09Solutions.AUGUST -> println("8")
-        Basics09Solutions.SEPTEMBER -> println("9")
-        Basics09Solutions.OCTOBER -> println("10")
-        Basics09Solutions.NOVEMBER -> println("11")
-        Basics09Solutions.DECEMBER -> println("12")
+        Basics09Solutions.JANUARY -> return 1
+        Basics09Solutions.FEBRUARY -> return 2
+        Basics09Solutions.MARCH -> return 3
+        Basics09Solutions.APRIL -> return 4
+        Basics09Solutions.MAY-> return 5
+        Basics09Solutions.JUNE -> return 6
+        Basics09Solutions.JULY -> return 7
+        Basics09Solutions.AUGUST -> return 8
+        Basics09Solutions.SEPTEMBER -> return 9
+        Basics09Solutions.OCTOBER -> return 10
+        Basics09Solutions.NOVEMBER -> return 11
+        Basics09Solutions.DECEMBER -> return 12
     }
+    return -1
     //println(Year.May)
 }
-
+fun main() {
+    enumMonths()
+}
