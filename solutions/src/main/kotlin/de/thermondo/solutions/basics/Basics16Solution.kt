@@ -9,10 +9,18 @@ package de.thermondo.solutions.basics
  */
 
 fun main() {
+    intCollection()
+    stringCollection()
+}
+
+fun intCollection(): Int {
     val num = setOf<Int>(1, 14, 2, 52)
     println(num.max())
+    return num.max()
+}
 
+fun stringCollection(): String {
     val list = listOf<String>("Initial", "Middle", "Last")
     println(list.last())
-
+    return list.last()
 }
