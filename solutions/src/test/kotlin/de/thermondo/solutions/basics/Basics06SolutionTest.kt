@@ -17,6 +17,7 @@ class Basics06SolutionTest{
     fun `Validate first user's age`() {
         assertEquals(expected = 32, actual = user1.age)
     }
+
     @Test
     fun `Validate second user's name`() {
         assertEquals(expected = "Venelope", actual = user2.name)
