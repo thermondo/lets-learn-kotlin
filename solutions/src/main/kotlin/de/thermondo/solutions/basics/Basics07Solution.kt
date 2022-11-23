@@ -8,7 +8,7 @@ package de.thermondo.solutions.basics
  * Define an enum class named Basics6Solution that prints the number of days of the week to the console.
  */
 
-enum class Basics7Solution {
+enum class Basics07Solution {
     SUNDAY,
     MONDAY,
     TUESDAY,
