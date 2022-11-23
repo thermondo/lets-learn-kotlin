@@ -5,7 +5,7 @@ package de.thermondo.solutions.basics
  */
 
 fun main() {
-    count(0)
+    count(5)
    // count(-1)
 }
 fun count(count:Int): Int {
