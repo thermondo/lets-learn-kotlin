@@ -16,14 +16,3 @@ class Basics06Solution(name: String, age: Int) {
     var age = age
 }
 
-/*
-fun main() {
-    val user1 = Basics6Solution(name = "Tom", age = 32) // Values of the properties are referred as state. So Tom, 32 is the state of user1.
-    println("User1 Name: ${user1.name}")
-    println("User1 Age: ${user1.age}")
-
-    val user2 = Basics6Solution(name = "Venelope", age = 28)//State of user2.
-    println("User2 Name:${user2.name}")
-    println("User2 Age:${user2.age}")
-
-}*/
