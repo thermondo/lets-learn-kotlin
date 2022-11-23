@@ -3,7 +3,7 @@ package de.thermondo.solutions.basics
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class Basics06SolutionTest{
+class Basics06SolutionTest {
 
     private val user1 = Basics06Solution(name = "Tom", age = 32)
     private val user2 = Basics06Solution(name = "Venelope", age = 21)
