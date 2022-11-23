@@ -19,5 +19,5 @@ enum class Basics07Solution {
 }
 
 fun main() {
-    Basics7Solution.values().forEach { println(it) }
+    Basics07Solution.values().forEach { println(it) }
 }
