@@ -7,7 +7,8 @@ package de.thermondo.solutions.basics
 fun basics10Solution() {
     var num = 2
     var index = 1
-    while (index <= 10)
+    var i = 10
+    while (index <= i)
     {
         println(num*index)
         index++
