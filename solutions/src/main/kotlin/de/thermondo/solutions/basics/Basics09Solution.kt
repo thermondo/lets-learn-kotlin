@@ -47,10 +47,10 @@ enum class Basics09Solution {
              SEPTEMBER -> monthNumber = 9
              OCTOBER -> monthNumber = 10
              NOVEMBER -> monthNumber = 11
-             DECEMBER -> monthNumber = 12 */
+             DECEMBER -> monthNumber = 12
             else -> {
                 monthNumber = -1
-            }
+            } */
         }
         return monthNumber
         // println(Basics09Solutions.MAY)
