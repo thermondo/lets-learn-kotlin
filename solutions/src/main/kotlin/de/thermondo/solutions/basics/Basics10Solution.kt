@@ -1,11 +1,10 @@
 package de.thermondo.solutions.basics
 
-import com.sun.tools.javac.Main
 /**
  * Print the table of 2 using while loop.
  */
 
-fun tableOf2() {
+fun Basics10Solution() {
     var num = 2
     var index = 1
     while (index <= 10)
