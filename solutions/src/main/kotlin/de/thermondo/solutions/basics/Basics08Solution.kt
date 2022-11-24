@@ -13,7 +13,8 @@ enum class Basics08Solution(val r:Int, val g:Int, val b:Int) {
     INDIGO(75,0,130),
     VIOLET(238,130,238);
 
-    fun rgb() = (r * 256 + g) * 256+ b
+    val x = 256
+    fun rgb() = (r * x + g) * x + b
 }
 
 fun main() {
