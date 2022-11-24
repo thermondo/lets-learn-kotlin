@@ -4,14 +4,14 @@ package de.thermondo.solutions.basics
  * Print the table of 2 using while loop.
  */
 
+@Suppress("MagicNumber")
 fun basics10Solution() {
-    var num = 2
+    val num = 2
     var index = 1
-    var i = 10
-    while (index <= i)
-    {
-        println(num*index)
+    val i = 10
+    while (index <= i) {
+        println(num * index)
         index++
     }
-    //print("Current Index : "+index)
+    // print("Current Index : "+index)
 }
