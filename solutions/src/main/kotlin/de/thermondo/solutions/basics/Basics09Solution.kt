@@ -5,7 +5,7 @@ package de.thermondo.solutions.basics
  *  Let's define an enum class named Basics9Solution using "when" expression to print number for each month of the year.
  */
 
-enum class Basics09Solutions() {
+enum class Basics09Solution {
     JANUARY,
     FEBRUARY,
     MARCH,
@@ -20,27 +20,32 @@ enum class Basics09Solutions() {
     DECEMBER;
 }
 
+@Suppress("MagicNumber")
 fun enumMonths(): Int {
+    var year = Basics09Solution.MARCH
+    var monthNumber: Int
 
-    var year = Basics09Solutions.MARCH
-    when(year){ /**Here, "year" is an argument. The "when" expression matches its arguments against all branches
-    in order until some branch condition is satisfied.*/
-        Basics09Solutions.JANUARY -> return 1
-        Basics09Solutions.FEBRUARY -> return 2
-        Basics09Solutions.MARCH -> return 3
-        Basics09Solutions.APRIL -> return 4
-        Basics09Solutions.MAY-> return 5
-        Basics09Solutions.JUNE -> return 6
-        Basics09Solutions.JULY -> return 7
-        Basics09Solutions.AUGUST -> return 8
-        Basics09Solutions.SEPTEMBER -> return 9
-        Basics09Solutions.OCTOBER -> return 10
-        Basics09Solutions.NOVEMBER -> return 11
-        Basics09Solutions.DECEMBER -> return 12
+    when (year) {
+        Basics09Solution.JANUARY -> monthNumber = 1
+        Basics09Solution.FEBRUARY -> monthNumber = 2
+        Basics09Solution.MARCH -> monthNumber = 3
+        Basics09Solution.APRIL -> monthNumber = 4
+        Basics09Solution.MAY -> monthNumber = 5
+        Basics09Solution.JUNE -> monthNumber = 6
+        Basics09Solution.JULY -> monthNumber = 7
+        Basics09Solution.AUGUST -> monthNumber = 8
+        Basics09Solution.SEPTEMBER -> monthNumber = 9
+        Basics09Solution.OCTOBER -> monthNumber = 10
+        Basics09Solution.NOVEMBER -> monthNumber = 11
+        Basics09Solution.DECEMBER -> monthNumber = 12
+        else -> {
+            monthNumber = -1
+        }
     }
-    return -1
-   // println(Basics09Solutions.MAY)
+    return monthNumber
+    // println(Basics09Solutions.MAY)
 }
+
 fun main() {
     enumMonths()
 }
