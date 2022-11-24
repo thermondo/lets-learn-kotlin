@@ -17,7 +17,7 @@ enum class Basics07Solution {
     FRIDAY,
     SATURDAY
 }
-
+/*
 fun main() {
     Basics07Solution.values().forEach { println(it) }
-}
+}*/
