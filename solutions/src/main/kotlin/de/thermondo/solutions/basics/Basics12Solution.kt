@@ -12,7 +12,7 @@ package de.thermondo.solutions.basics
  * A function that returns values with two steps.
  */
 
-fun main() {
+/*fun main() {
     println("Normal incrementing:")
     increment()
     println("Incrementing with 2 steps:")
@@ -21,7 +21,7 @@ fun main() {
     untilIncrement()
     println("Decrement with 2 steps")
     stepDecrement()
-}
+}*/
 
 // Function to print the values in the incremental order.
 @Suppress("MagicNumber")
