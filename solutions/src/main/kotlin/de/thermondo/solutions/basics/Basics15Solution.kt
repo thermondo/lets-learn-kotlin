@@ -10,10 +10,6 @@ package de.thermondo.solutions.basics
  * If the condition is true it will execute the try block if not it will return the value from catch.
  */
 
-fun main() {
-    tryCatch()
-}
-
 fun tryCatch(): Int {
     var str: String = "456"
 
