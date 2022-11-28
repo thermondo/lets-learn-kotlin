@@ -7,19 +7,18 @@ fun main() {
     tryCatchException()
 }
 @Suppress("MagicNumber")
-fun tryCatchException(): String {
-    var arr: Array<Int> = arrayOf(1,2,3)
+fun tryCatchException(): Unit {
+    val arr: IntArray = intArrayOf(1,2,3)
     try {
         println(arr[10])
     }
-
-    catch (exc: ArrayIndexOutOfBoundsException) {
+    catch (e: ArrayIndexOutOfBoundsException) {
+        println("Please check the array index")
+    }
+    catch (e: NoSuchElementException) {
         println("Please check the array index")
     }
     finally {
         println("I am finally and I execute no matter what")
-       // return x + y
     }
-  return "Please check the array index\nI am finally and I execute no matter what"
-
 }
