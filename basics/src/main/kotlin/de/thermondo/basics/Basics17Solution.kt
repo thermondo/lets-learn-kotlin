@@ -6,9 +6,6 @@ package de.thermondo.solutions.basics
  *
  *
  */
-fun main() {
-    joinAndStringConversion()
-}
 fun joinAndStringConversion(): String {
     val list = listOf("One", " Two", " Three")
 
