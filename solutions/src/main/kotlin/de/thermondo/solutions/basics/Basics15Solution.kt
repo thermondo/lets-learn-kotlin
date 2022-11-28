@@ -9,15 +9,35 @@ package de.thermondo.solutions.basics
  * try as expression - It works more like if-else in java and when in kotlin.
  * If the condition is true it will execute the try block if not it will return the value from catch.
  */
+fun main() {
+    tryCatch()
+    newTryCatch()
+}
+
 
 fun tryCatch(): Int {
-    var str: String = "456"
+    var n1: String = "456"
+    //var n2: String = "456"
 
     var num: Int = try {
-        str.toInt()
+        n1.toInt()
     } catch (e: NumberFormatException) {
         0
     }
     println(num)
     return num
+}
+
+fun newTryCatch(): Int {
+
+    var n2: String = "456a"
+
+    var num2: Int = try {
+        n2.toInt()
+    } catch (e: NumberFormatException) {
+        0
+    }
+    println(num2)
+    return num2
+
 }

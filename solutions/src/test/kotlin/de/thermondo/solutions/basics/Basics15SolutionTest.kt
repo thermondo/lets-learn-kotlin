@@ -9,10 +9,10 @@ class Basics15SolutionTest {
     fun `Validate the integers`() {
         assertEquals(456, tryCatch())
     }
-    /*
+
     @Test
     fun `Validate the exception`(){
-    assertEquals(0, tryCatch())
+    assertEquals(0, newTryCatch())
     }
-    */
+
 }
