@@ -14,10 +14,9 @@ fun main() {
     newTryCatch()
 }
 
-
 fun tryCatch(): Int {
     var n1: String = "456"
-    //var n2: String = "456"
+    // var n2: String = "456"
 
     var num: Int = try {
         n1.toInt()
@@ -29,7 +28,6 @@ fun tryCatch(): Int {
 }
 
 fun newTryCatch(): Int {
-
     var n2: String = "456a"
 
     var num2: Int = try {
@@ -39,5 +37,4 @@ fun newTryCatch(): Int {
     }
     println(num2)
     return num2
-
 }

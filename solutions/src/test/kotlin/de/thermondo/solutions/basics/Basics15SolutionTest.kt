@@ -11,8 +11,7 @@ class Basics15SolutionTest {
     }
 
     @Test
-    fun `Validate the exception`(){
-    assertEquals(0, newTryCatch())
+    fun `Validate the exception`() {
+        assertEquals(0, newTryCatch())
     }
-
 }
