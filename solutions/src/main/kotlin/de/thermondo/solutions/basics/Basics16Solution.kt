@@ -8,10 +8,10 @@ package de.thermondo.solutions.basics
  *
  */
 
-fun main() {
+/*fun main() {
     intCollection()
     stringCollection()
-}
+}*/
 
 @Suppress("MagicNumber")
 fun intCollection(): Int {
