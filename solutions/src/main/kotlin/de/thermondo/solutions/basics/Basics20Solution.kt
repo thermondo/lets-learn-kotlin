@@ -8,7 +8,7 @@ package de.thermondo.solutions.basics
 class Basics20Solution(val radius: Int) {
 
     fun area(): Double {
-        return 2 * Math.PI * radius
+        return Math.PI * radius * radius
     }
 }
 
@@ -16,8 +16,10 @@ fun Basics20Solution.perimeter(): Double { // This is the extended
     return 2 * Math.PI * radius
 }
 
+/*
 @Suppress("MagicNumber")
 fun main() {
     val circle = Basics20Solution(4)
     println(circle.perimeter())
-}
+    println(circle.area())
+}*/
