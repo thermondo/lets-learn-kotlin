@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class Basics1Test {
+class Basics01Test {
 
     @Test
     fun `validate immutable value instantiation`() {
