@@ -10,21 +10,21 @@ class Basics06SolutionTest {
 
     @Test
     fun `Validate first user's name`() {
-        assertEquals(expected = "Tom", actual = user1.name)
+        assertEquals(expected = "Tom", actual = user1.userName)
     }
 
     @Test
     fun `Validate first user's age`() {
-        assertEquals(expected = 32, actual = user1.age)
+        assertEquals(expected = 32, actual = user1.userAge)
     }
 
     @Test
     fun `Validate second user's name`() {
-        assertEquals(expected = "Venelope", actual = user2.name)
+        assertEquals(expected = "Venelope", actual = user2.userName)
     }
 
     @Test
     fun `Validate second user's age`() {
-        assertEquals(expected = 21, actual = user2.age)
+        assertEquals(expected = 21, actual = user2.userAge)
     }
 }
