@@ -4,9 +4,9 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
-class Basics5SolutionTest {
+class Basics05SolutionTest {
 
-    private val clazz = Basics5Solution()
+    private val clazz = Basics05Solution()
 
     @Test
     fun `Validate that class exists`() {
