@@ -3,7 +3,7 @@ package de.thermondo.solutions.basics
 import de.thermondo.test.utils.BasePrintlnTest
 import kotlin.test.Test
 
-class Basics3SolutionTest : BasePrintlnTest() {
+class Basics03SolutionTest : BasePrintlnTest() {
     @Test
     fun `Validate helloParameter function`() {
         val kotlin = "Kotlin"
