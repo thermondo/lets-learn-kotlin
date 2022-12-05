@@ -4,7 +4,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
-class Basics5Test {
+class Basics05Test {
 
     private val clazz = Basics5()
 
