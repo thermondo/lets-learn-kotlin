@@ -1,7 +1,7 @@
 package de.thermondo.solutions.basics
 
 /**
- * Create a class named Basics6Solution
+ * Create a class named Basics06Solution
  *
  * Define member variables:
  * name: String
@@ -9,6 +9,6 @@ package de.thermondo.solutions.basics
  * and return the data of the two people while writing unit tests.
  */
 class Basics06Solution(name: String, age: Int) {
-    val name = name // The variables that are part of the class are called as properties.
-    var age = age
+    val name = name
+    val age = age
 }
