@@ -1,0 +1,18 @@
+package de.thermondo.basics
+
+import org.junit.jupiter.api.Test
+import kotlin.test.assertNotNull
+
+class Basics07SolutionTest {
+
+    @Test
+    fun `Validate the day of the week`() {
+        assertNotNull(Basics07Solution.SUNDAY)
+        assertNotNull(Basics07Solution.MONDAY)
+        assertNotNull(Basics07Solution.TUESDAY)
+        assertNotNull(Basics07Solution.WEDNESDAY)
+        assertNotNull(Basics07Solution.THURSDAY)
+        assertNotNull(Basics07Solution.FRIDAY)
+        assertNotNull(Basics07Solution.SATURDAY)
+    }
+}
