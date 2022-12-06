@@ -27,6 +27,7 @@ allprojects {
             projects {
                 excludes += listOf(
                     "test-utils",
+                    "advent-of-code", // TODO: Remove exclusion rules in order to track your progress
                     "basics", // TODO: Remove exclusion rules in order to track your progress
                 )
             }
