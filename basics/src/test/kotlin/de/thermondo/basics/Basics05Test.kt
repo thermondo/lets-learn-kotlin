@@ -6,7 +6,7 @@ import kotlin.test.assertNotNull
 
 class Basics05Test {
 
-    private val clazz = Basics5()
+    private val clazz = Basics05()
 
     @Test
     fun `Validate that class exists`() {
