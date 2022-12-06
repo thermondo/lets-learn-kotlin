@@ -1,5 +1,6 @@
 package de.thermondo.advent2022.day01
 
+import de.thermondo.utils.Exclude
 import de.thermondo.utils.stringFromFile
 
 /**
@@ -17,6 +18,7 @@ import de.thermondo.utils.stringFromFile
  * Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
  */
 
+@Exclude
 fun main() {
     val input = stringFromFile("/advent2022/InputDay01.txt")
     val calories = input?.let { calculateCaloriesPartTwo(input = it, count = 3) }

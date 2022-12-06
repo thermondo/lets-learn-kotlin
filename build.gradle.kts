@@ -31,6 +31,9 @@ allprojects {
                     "basics", // TODO: Remove exclusion rules in order to track your progress
                 )
             }
+            annotations {
+                excludes += listOf("*Exclude")
+            }
         }
         xmlReport {
             onCheck.set(false)
