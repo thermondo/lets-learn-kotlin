@@ -1,9 +1,10 @@
 package de.thermondo.solutions.basics
 
+import de.thermondo.test.utils.BasePrintlnTest
 import org.junit.jupiter.api.Test
 import kotlin.test.assertNotNull
 
-class Basics07SolutionTest {
+class Basics07SolutionTest : BasePrintlnTest(){
 
     @Test
     fun `Validate the day of the week`() {
@@ -14,5 +15,11 @@ class Basics07SolutionTest {
         assertNotNull(Basics07Solution.THURSDAY)
         assertNotNull(Basics07Solution.FRIDAY)
         assertNotNull(Basics07Solution.SATURDAY)
+    }
+
+    @Test
+    fun `Validate the print fun`(){
+        printEnum()
+        assertPrintln("SUNDAY\nMONDAY\nTUESDAY\nWEDNESDAY\nTHURSDAY\nFRIDAY\nSATURDAY")
     }
 }

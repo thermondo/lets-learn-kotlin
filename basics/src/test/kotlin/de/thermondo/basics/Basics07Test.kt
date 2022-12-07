@@ -7,12 +7,12 @@ class Basics07SolutionTest {
 
     @Test
     fun `Validate the day of the week`() {
-        assertNotNull(Basics07Solution.SUNDAY)
-        assertNotNull(Basics07Solution.MONDAY)
-        assertNotNull(Basics07Solution.TUESDAY)
-        assertNotNull(Basics07Solution.WEDNESDAY)
-        assertNotNull(Basics07Solution.THURSDAY)
-        assertNotNull(Basics07Solution.FRIDAY)
-        assertNotNull(Basics07Solution.SATURDAY)
+        assertNotNull(Basics07.SUNDAY)
+        assertNotNull(Basics07.MONDAY)
+        assertNotNull(Basics07.TUESDAY)
+        assertNotNull(Basics07.WEDNESDAY)
+        assertNotNull(Basics07.THURSDAY)
+        assertNotNull(Basics07.FRIDAY)
+        assertNotNull(Basics07.SATURDAY)
     }
 }
