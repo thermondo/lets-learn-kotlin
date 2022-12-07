@@ -9,7 +9,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":utils"))
     testImplementation(kotlin("test"))
-    testImplementation(project(":test-utils"))
 }
