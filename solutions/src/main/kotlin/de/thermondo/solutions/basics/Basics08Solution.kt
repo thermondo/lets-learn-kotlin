@@ -17,13 +17,3 @@ enum class Basics08Solution(val r: Int, val g: Int, val b: Int) {
     val x = 256
     fun rgb() = (r * x + g) * x + b
 }
-
-/*fun main() {
-    println(Basics08Solution.RED.rgb())
-    println(Basics08Solution.ORANGE.rgb())
-    println(Basics08Solution.YELLOW.rgb())
-    println(Basics08Solution.GREEN.rgb())
-    println(Basics08Solution.BLUE.rgb())
-    println(Basics08Solution.INDIGO.rgb())
-    println(Basics08Solution.VIOLET.rgb())
-}*/
