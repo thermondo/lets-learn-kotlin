@@ -1,6 +1,5 @@
 package de.thermondo.solutions.basics
 
-import de.thermondo.test.utils.BasePrintlnTest
 import org.junit.jupiter.api.Test
 import kotlin.test.assertNotNull
 
