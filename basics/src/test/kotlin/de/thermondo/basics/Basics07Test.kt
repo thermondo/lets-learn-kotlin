@@ -3,7 +3,7 @@ package de.thermondo.basics
 import org.junit.jupiter.api.Test
 import kotlin.test.assertNotNull
 
-class Basics07SolutionTest {
+class Basics07Test {
 
     @Test
     fun `Validate the day of the week`() {
