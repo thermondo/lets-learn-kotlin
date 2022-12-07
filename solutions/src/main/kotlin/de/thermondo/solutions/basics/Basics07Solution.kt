@@ -17,7 +17,3 @@ enum class Basics07Solution {
     FRIDAY,
     SATURDAY
 }
-
-fun printEnum() {
-    Basics07Solution.values().forEach { println(it) }
-}

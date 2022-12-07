@@ -16,10 +16,4 @@ class Basics07SolutionTest : BasePrintlnTest() {
         assertNotNull(Basics07Solution.FRIDAY)
         assertNotNull(Basics07Solution.SATURDAY)
     }
-
-    @Test
-    fun `Validate the print fun`() {
-        printEnum()
-        assertPrintln("SUNDAY\nMONDAY\nTUESDAY\nWEDNESDAY\nTHURSDAY\nFRIDAY\nSATURDAY")
-    }
 }
