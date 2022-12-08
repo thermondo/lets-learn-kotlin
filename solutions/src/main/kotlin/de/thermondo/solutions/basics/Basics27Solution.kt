@@ -5,10 +5,7 @@ class Basics27Solution {
         val str: String = "Kotlin"
         val pattern = Regex("tl")
         val result = pattern.containsMatchIn(str)
-       // println(result)
         return result
     }
 }
-
-
 
