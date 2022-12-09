@@ -1,11 +1,7 @@
 package de.thermondo.solutions.basics
 
-class Basics27Solution {
-    fun regularExpression(): Any {
-        val str: String = "Kotlin"
-        val pattern = Regex("tl")
-        val result = pattern.containsMatchIn(str)
-        return result
-    }
+fun regularExpression(): Boolean {
+    val str: String = "Kotlin"
+    val pattern = Regex("tl")
+    return pattern.containsMatchIn(str)
 }
-
