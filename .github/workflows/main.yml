@@ -38,6 +38,6 @@ jobs:
       - name: Test
         run: make test report
       - name: Report
-        uses: codecov/codecov-action@v3.1.1
+        uses: codecov/codecov-action@v3.1.3
         with:
           files: ./build/reports/kover/result.xml
