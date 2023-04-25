@@ -3,7 +3,7 @@ import kotlinx.kover.api.KoverProjectConfig
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "1.8.21"
 
     id("io.gitlab.arturbosch.detekt") version "1.22.0"
     id("org.jmailen.kotlinter") version "3.14.0"
