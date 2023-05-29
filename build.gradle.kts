@@ -6,7 +6,7 @@ plugins {
     kotlin("jvm") version "1.8.0"
 
     id("io.gitlab.arturbosch.detekt") version "1.22.0"
-    id("org.jmailen.kotlinter") version "3.14.0"
+    id("org.jmailen.kotlinter") version "3.15.0"
     id("org.jetbrains.kotlinx.kover") version "0.6.1"
 }
 
